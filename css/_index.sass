@@ -1,0 +1,161 @@
+body	
+	background-color: #fffffb
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+	header
+		background-color: black
+		.nav
+			width: 100%
+			height: 60px
+			background-color:  #343a40
+			padding: 10px 0
+			ul
+				li
+					width: 150px
+					float: left
+					margin-left: 20px
+					font-size: 18px
+					text-align: center
+					line-height: 34px
+					a
+						color: white
+						font-family: sans-serif
+						font-weight: 300
+						
+
+				.headimg
+					width: 34px
+					height: 34px
+					float: right
+					margin-right: 20px
+
+	.container
+		position: relative
+		width: 100%
+		text-align: center
+		left: 50%
+		transform: translateX(-50%)
+		.fronttitle
+			width: 100%
+			padding: 100px 0
+			.title
+				font-family: 'DFHeiMedium-V30-UNI-H'
+				color: #343a40!important
+				font-size: 22px
+				font-weight: 300
+			.title_content
+				font-family: 'Segoe UI'
+				margin-top: 30px
+				position: relative
+				color: #868e96
+				font-size: 16px
+				font-weight: 120
+		.img-content
+			width: 100%
+			position: relative
+			background: #f7f7f7
+			.flex-box
+				display: inline-flex
+				flex-direction: row
+				justify-content: space-around
+				align-content: center
+				flex-wrap: wrap
+				padding-top: 40px
+				padding-bottom: 40px
+				+pad
+					width: 767px
+					justify-content: flex-start
+					position: relative
+				+desktop
+					width: 1023px
+					justify-content: flex-start
+					position: relative
+				.workbigarea
+					width: 300px
+					position: relative
+					text-align: center
+					background-color: white
+					margin-top: 20px
+					&:hover
+						box-shadow: 2px 2px 2px 2px rgba(100,100,100,0.2)
+					+pad
+						margin-left: 55px
+					+desktop
+						margin-left: 31px
+					.aroundmain
+						width: 300px
+						height: 225px
+						position: relative
+						margin: 0
+						.mainarea
+							position: absolute
+							left: 0px
+							top: 0px
+							width: 300px
+							height: 225px
+							z-index: 5
+							font-family: Microsoft JhengHei
+							-moz-transition: all 300ms ease-out
+							transition: all 300ms ease-out
+							opacity: 0
+							cursor: pointer
+							display: block
+							text-decoration: none 
+							&:hover
+								opacity: 1	
+							&:hover .main_content .line
+								width: 90%
+
+							.main_content
+								z-index: 10
+								vertical-align: middle
+								padding: 60px 0
+								color: #ffffff
+								position: relative
+								width: 100%
+								height: 100%
+								.line
+									height: 2px
+									width: 0%
+									margin: 15px auto
+									background-color: #ffffff
+									-webkit-transition: all 300ms ease-out
+									-moz-transition: all 300ms ease-out
+									-o-transition: all 300ms ease-out
+									transition: all 300ms ease-out
+									&:hover
+										width: 90%
+								.introdu
+									font-size: 20px
+									margin: auto 0
+									color: white
+							.mask
+								background-color: black
+								filter: alpha(opacity=50)
+								opacity: 0.5
+								z-index: 0
+								width: 300px
+								height: 225px
+								position: absolute
+								left: 0px
+								top: 0px
+						img
+							position: absolute
+							left: 0px
+							top: 0px
+							width: 300px
+							height: 225px
+
+					.pvctext
+						padding: 15px 0
+						width: 100%
+						margin: 0
+						text-align: center
+						line-height: 22px
+						font-size: 16px
+						font-family: 'DFHeiMedium-V30-UNI-H'
+						color: #868e96!important
+					
+
+			
+
+	
